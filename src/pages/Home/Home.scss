@@ -1,0 +1,23 @@
+.images {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .home__img-1 {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+  .home__img-2 {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    
+  }
+}

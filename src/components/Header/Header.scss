@@ -1,0 +1,14 @@
+.header {
+  padding: 0.5rem;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  background: white;
+  box-shadow: 0 1em 2em rgba(black, .05);
+}
+@media screen and (max-width: 500px) {
+  .header {
+    height: 90px;
+  }
+
+} 
