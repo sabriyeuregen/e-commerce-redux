@@ -4,6 +4,8 @@ const ProductCard = (props ) => {
     <div>
         {props.name}
         {props.price}
+        {props.image}
+        {props.button}
     </div>
   )
 }
