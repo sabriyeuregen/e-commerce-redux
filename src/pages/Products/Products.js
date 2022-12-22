@@ -1,8 +1,8 @@
-import FetchData from "../../components/FetchData/FetchData";
+import ProductList from "../../components/ProductList/ProductList";
 const Products = () => {
   return (
     <div>
-        <FetchData/>
+        <ProductList/>
     </div>
   )
 }
