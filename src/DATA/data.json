@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "name": "drees",
+    "title": "drees",
     "price": 199.99
   },
   {
     "id": 2,
-    "name": "shoes",
+    "title": "shoes",
     "price": 299.99
   },
   {
     "id": 3,
-    "name": "bag",
+    "title": "bag",
     "price": 399.99
   }
 ]

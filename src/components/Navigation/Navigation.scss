@@ -5,15 +5,14 @@
   justify-content: space-around;
 
   .navigation__logo {
-     display: flex;
+    display: flex;
 
     &-icon {
       font-size: 1.25rem;
       text-align: center;
     }
     &-icon:hover {
-       color:darkmagenta;
-
+      color: darkmagenta;
     }
     h2 {
       font-size: 1rem;
@@ -65,29 +64,45 @@
       }
     }
   }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    max-width: 800px;
+
+    a {
+      margin: 0 20px;
+      font-size: 1em;
+      text-decoration: none;
+      flex-grow: 1;
+      padding: 0.25em;
+      position: relative;
+      color: black;
+      display: block;
+    }
+    a:hover {
+      color: #a9bb8f;
+    }
+
+    .basket {
+      border-style: solid;
+      border-color: #6c6c6c;
+      border-width: 1px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      span {
+        position: absolute;
+        border-color: #6c6c6c;
+        border-style: solid;
+        border-radius: 10px;
+      }
+    }
+  }
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 10px;
-  max-width: 800px;
-
-  a {
-    margin: 0 20px;
-    font-size: 1em;
-    text-decoration: none;
-    flex-grow: 1;
-    padding: 0.25em;
-    position: relative;
-    color: black;
-    display: block;
-  }
-  a:hover {
-    color: #a9bb8f;
-  }
-}
 @media screen and (max-width: 500px) {
   .navigation {
     float: none;
@@ -96,9 +111,6 @@ nav {
 
     .navigation__logo {
       text-align: center;
-     }
-
-     
+    }
   }
-  
 }
