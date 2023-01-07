@@ -10,6 +10,9 @@ const ProductList = (props) => {
       id={product.id}
       title={product.title}
       price={product.price}
+      image={
+        <img style={{ objectFit: "contain" }}  src={product.image}></img>
+        }
     />
   ));
 

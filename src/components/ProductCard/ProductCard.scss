@@ -1,8 +1,42 @@
 .productcard {
-  background: #F5F5F5;
-  box-shadow: 5px 5px 15px rgba(#BA7E7E, 0.5);
+  background: #f5f5f5;
+  box-shadow: 5px 5px 15px rgba(#ba7e7e, 0.5);
   border-radius: 10px;
+  overflow: hidden;
 
+  &:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  &-image {
+    position: relative;
+  }
   &__title {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+  }
+  &__bottom {
+ 
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &-price {
+
+     font-size: 18px;
+     font-style: italic;
+     
+
+    }
+    &-button {
+      background-color:#0a0a23;
+      color: #FF7B89;
+      border-radius:10px; 
+      border:none;
+      padding: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
   }
 }

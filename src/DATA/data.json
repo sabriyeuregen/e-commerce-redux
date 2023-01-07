@@ -1,17 +1,50 @@
 [
   {
     "id": 1,
-    "title": "drees",
+    "image":"https://images.unsplash.com/photo-1599662875272-64de8289f6d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "title": "Siyah dantelli uzun elbise",
     "price": 199.99
   },
   {
     "id": 2,
-    "title": "shoes",
+    "image":"https://images.unsplash.com/photo-1614786269829-d24616faf56d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    "title": "Siyah ceket pantolon takım",
     "price": 299.99
   },
   {
     "id": 3,
-    "title": "bag",
+    "image":"https://images.unsplash.com/photo-1602010069450-0a62034f235c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=437&q=80",
+    "title": "Çiçekli midi boy elbise",
     "price": 399.99
+  },
+  {
+    "id": 4,
+    "image":"https://images.unsplash.com/photo-1551803091-e20673f15770?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+    "title":"Lacivert dantelli elbise",
+    "price": 499.88
+  },
+  {
+    "id": 5,
+    "image":"https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "title":"Siyah ceket pantolon klasik takım",
+    "price":599.99
+  },
+  {
+    "id":6,
+    "image":"https://images.unsplash.com/photo-1607676741496-71707d61f475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
+    "title":"Midi boy beyaz elbise",
+    "price":600.99
+  },
+  {
+    "id":7,
+    "image":"https://images.unsplash.com/photo-1640923160720-35dddb6348ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "title":"Açık kahve midi boy elbise",
+    "price":499.99
+  },
+  {
+    "id":8,
+    "image":"https://images.unsplash.com/photo-1553335719-239c2726dd15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "title":"Yeşil ceket pantolon takım",
+    "price":799.50
   }
 ]

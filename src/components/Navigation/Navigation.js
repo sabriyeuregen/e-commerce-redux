@@ -28,9 +28,9 @@ const Navigation = () => {
       <nav>
       <NavLink to="/">Anasayfa</NavLink>
       <NavLink to="/products">Ürünler</NavLink>
-      <NavLink to="/login">Giriş yap</NavLink>
+      {!isAuth && <NavLink to="/login">Giriş yap</NavLink>} 
       {isAuth && <NavLink to="/profile">Profil</NavLink>}
-      <button onClick={logoutHandler}>Logout</button>
+      <button className="nav-button" onClick={logoutHandler}>Logout</button>
       <div className="basket">
       <NavLink to="/basket"><FontAwesomeIcon icon={faBasketShopping}></FontAwesomeIcon></NavLink>
       <span>{cartQuantity}</span>

@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { authActions } from "../../store/auth-slice";
+import "./AuthForm.scss";
 //https://firebase.google.com/docs/reference/rest/auth#section-change-password
 const AuthForm = () => {
   const dispatch = useDispatch();
@@ -66,12 +67,12 @@ const AuthForm = () => {
   return (
     <section className="auth">
       <h1>{isLogin ? "Login" : "Sign Up"}</h1>
-      <form onSubmit={submitHandler}>
-        <div className="control">
+      <form onSubmit={submitHandler} className="auth__form"> 
+        <div className="auth__form-email">
           <label htmlFor="email">Your Email</label>
           <input type="email" id="email" required ref={emailInputRef} />
         </div>
-        <div className="control">
+        <div className="auth__form-password">
           <label htmlFor="password">Your Password</label>
           <input
             type="password"
@@ -80,14 +81,14 @@ const AuthForm = () => {
             ref={passwordInputRef}
           />
         </div>
-        <div className="actions">
+        <div className="auth__form-buttons">
           {!isLoading && (
-            <button>{isLogin ? "Login" : "Create Account"}</button>
+            <button className="auth__form-buttons1">{isLogin ? "Login" : "Create Account"}</button>
           )}
           {isLoading && <p>Sending request...</p>}
           <button
             type="button"
-            className="toggle"
+            className="auth__form-buttons2"
             onClick={switchAuthModeHandler}
           >
             {isLogin ? "Create new account" : "Login with existing account"}

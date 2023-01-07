@@ -1,4 +1,5 @@
 import { useRef } from "react"
+import "./ProfileForm.scss"
 const ProfileForm = () => {
 
   const newPasswordInputRef = useRef();
@@ -25,13 +26,13 @@ const ProfileForm = () => {
   }
 
   return (
-    <form className="form" onSubmit={submitHandler}>
-    <div className="control">
+    <form className="form" onSubmit={submitHandler} >
+    <div className="form__control">
       <label htmlFor='new-password'>New Password</label>
       <input type='password' id='new-password' minLength="7" ref={newPasswordInputRef} />
-    </div>
-    <div className="action">
-      <button>Change Password</button>
+     <div className="form__actions">
+     <button>Change Password</button>
+     </div>
     </div>
   </form>
   )
