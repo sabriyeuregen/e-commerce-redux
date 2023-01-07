@@ -1,10 +1,11 @@
 import ProductList from "../../components/ProductList/ProductList";
+
 const Products = () => {
   return (
     <div>
-        <ProductList/>
+      <ProductList />
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
