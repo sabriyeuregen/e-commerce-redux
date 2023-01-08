@@ -15,8 +15,6 @@ const Navigation = () => {
     dispatch(authActions.logout());
   };
 
-  const cartLength = cartQuantity.length;
-
   return (
     <div className="navigation">
       <div className="navigation__logo">
@@ -32,7 +30,7 @@ const Navigation = () => {
           <NavLink to="/basket">
             <FontAwesomeIcon icon={faBasketShopping} className="nav__basket-icon"></FontAwesomeIcon>
           </NavLink>
-         {cartLength >0 && <span>{cartQuantity}</span>} 
+         <span>{cartQuantity}</span>
         </div>
        {isAuth && <button className="nav-button" onClick={logoutHandler}>
           Çıkış yap

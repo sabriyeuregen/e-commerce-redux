@@ -27,6 +27,7 @@ const ProductCard = (props) => {
       {isAuth && <div className="productcard__bottom-button">
         {<button className="productcard__bottom-button" onClick={addToBasketHandler}>Sepete Ekle</button>}
       </div>}
+      {!isAuth && <span>Sepete eklemek için giriş yapınız!</span>}
       </div>
     </div>
   );

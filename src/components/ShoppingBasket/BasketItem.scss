@@ -1,0 +1,63 @@
+.basket {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f5f5f5;
+  box-shadow: 5px 5px 15px rgba(#ba7e7e, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.25rem;
+    }
+
+    .basket__price {
+      font-size: 1.5rem;
+      font-weight: bold;
+
+      .basket__itemprice {
+        font-weight: normal;
+        font-size: 1rem;
+        font-style: italic;
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__quantity {
+      span {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem 0;
+
+    button {
+      background-color: #21145a;
+      border: 1px solid white;
+      margin-left: 0.5rem;
+      padding: 0.15rem 1rem;
+      color: white;
+
+      &:hover,
+      &:active {
+        background-color: #21145a;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

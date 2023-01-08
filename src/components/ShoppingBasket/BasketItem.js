@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cart-slice";
+import "./BasketItem.scss";
 const BasketItem = (props) => {
   const dispatch = useDispatch();
 
@@ -20,18 +21,23 @@ const BasketItem = (props) => {
   };
 
   return (
-    <div>
-      <div>{title}</div>
-      <div>
-        {total} <span>{price}/item)</span>
-      </div>
-      <div>{quantity}</div>
-      <div>{total}</div>
-      <div>{price}</div>
-      <div>{id}</div>
-      <div>
-        <button onClick={removeItemHandler}>-</button>
-        <button onClick={addItemHandler}>+</button>
+    <div className="basket">
+      <header>
+        <h3>{title}</h3>
+        <div className="basket__price">
+          ${total.toFixed(2)}{" "}
+          <span className="basket__itemprice">(${price.toFixed(2)}/item)</span>
+        </div>
+      </header>
+      <div className="basket__details">
+        <div className="basket__quantity">
+          x <span>{quantity}</span>
+        </div>
+
+        <div className="basket__actions">
+          <button onClick={removeItemHandler}>-</button>
+          <button onClick={addItemHandler}>+</button>
+        </div>
       </div>
     </div>
   );

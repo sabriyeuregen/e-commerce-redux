@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import BasketItem from "./BasketItem";
+import "./ShoppingBasket.scss";
 const ShoppingBasket = () => {
   const basketItems = useSelector((state) => state.cart.items);
 
@@ -15,8 +16,8 @@ const ShoppingBasket = () => {
       }}
     />
   ));
-   console.log(basketItems)
-  return <div>{basketProductList}</div>;
+   
+  return <div className="basketlist">{basketProductList}</div>;
 };
 
 export default ShoppingBasket;

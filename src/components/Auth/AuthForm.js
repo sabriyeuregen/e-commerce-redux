@@ -66,14 +66,14 @@ const AuthForm = () => {
 
   return (
     <section className="auth">
-      <h1>{isLogin ? "Login" : "Sign Up"}</h1>
+      <h1>{isLogin ? "Giriş yap" : "Kayıt ol"}</h1>
       <form onSubmit={submitHandler} className="auth__form"> 
         <div className="auth__form-email">
-          <label htmlFor="email">Your Email</label>
+          <label htmlFor="email">Email</label>
           <input type="email" id="email" required ref={emailInputRef} />
         </div>
         <div className="auth__form-password">
-          <label htmlFor="password">Your Password</label>
+          <label htmlFor="password">Şifre</label>
           <input
             type="password"
             id="password"
@@ -83,7 +83,7 @@ const AuthForm = () => {
         </div>
         <div className="auth__form-buttons">
           {!isLoading && (
-            <button className="auth__form-buttons1">{isLogin ? "Login" : "Create Account"}</button>
+            <button className="auth__form-buttons1">{isLogin ? "Giriş yap" : "Hesap oluştur"}</button>
           )}
           {isLoading && <p>Sending request...</p>}
           <button
@@ -91,7 +91,7 @@ const AuthForm = () => {
             className="auth__form-buttons2"
             onClick={switchAuthModeHandler}
           >
-            {isLogin ? "Create new account" : "Login with existing account"}
+            {isLogin ? "Yeni kayıt oluştur" : "Mevcut hesap ile giriş yap"}
           </button>
         </div>
       </form>
