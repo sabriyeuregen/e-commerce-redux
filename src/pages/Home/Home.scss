@@ -1,26 +1,9 @@
 .containerStyles {
-  width: 80%;
-  height: 580px;
-  margin: 0 auto;
-  padding-top: 10px;
+  width: 100%;
+  height: 520px;
+  top: 0;
 }
-/*.home__img {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
 
-  &-1 {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-  }
-  &-2 {
-    max-width: 100%;
-    height: auto;
-    width: 100%;
-  }
-
-}*/
 @media screen and (max-width: 500px) {
   .images {
     display: flex;

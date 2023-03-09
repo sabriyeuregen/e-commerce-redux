@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import "./Home.scss";
 
@@ -22,6 +23,7 @@ const Home = () => {
       <div className="containerStyles">
         <ImageSlider slides={slides}></ImageSlider>
       </div>
+      <Footer/>
     </div>
   );
 };

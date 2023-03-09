@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cart-slice";
-import "./BasketItem.scss";
-const BasketItem = (props) => {
+import "./BasketCardItem.scss";
+const BasketCardItem = (props) => {
   const dispatch = useDispatch();
 
   const { title, quantity, total, price, id } = props.item;
@@ -43,4 +43,4 @@ const BasketItem = (props) => {
   );
 };
 
-export default BasketItem;
+export default BasketCardItem;

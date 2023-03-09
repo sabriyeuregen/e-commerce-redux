@@ -1,7 +1,11 @@
+import Footer from "../../components/Footer/Footer";
 import ShoppingBasket from "../../components/ShoppingBasket/ShoppingBasket";
 const Basket = () => {
   return (
-    <div><ShoppingBasket/></div>
+    <div><ShoppingBasket/>
+         <Footer/> 
+    </div>
+ 
   )
 }
 

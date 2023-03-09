@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 .navigation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  font-size: 1.25rem;
+  color: #0a0a23;
+  font-style: italic;
+  font-weight: bold;
 
   .navigation__logo {
     display: flex;
@@ -10,10 +15,8 @@
     &-icon {
       font-size: 1.5rem;
       text-align: center;
+      color: darkmagenta;
 
-      &:hover {
-        color: darkmagenta;
-      }
     }
     h2 {
       font-size: 1.25rem;
@@ -24,56 +27,53 @@
 
   .nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     padding: 5px;
-    max-width: 800px;
+    
 
     a {
       margin: 0 20px;
       font-size: 1em;
       text-decoration: none;
       flex-grow: 1;
-      padding: 0.25em;
       position: relative;
-      color: black;
-      display: block;
+      color: #0a0a23;
 
       &:hover {
         color: darkmagenta;
       }
     }
-
-    &-button {
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      font-size: 12px;
-    }
-   
-
-    &__basket {
-      display: block;
-      text-align: center;
-      border-style: solid;
-      border-color: #6c6c6c;
-      border-width: 2px;
-      border-radius: 8px;
-      background-color: #ba7e7e;
-
-      &-icon {
-        font-size: 20px;
-      }
-      span {
-       // position: absolute;
-       // top: 30px;
-        border-color: #6c6c6c;
-        border-style: solid;
-        border-radius: 10px;
-      }
-    }
   }
-}
+    .nav__basket {
+        display: block;
+        text-align: center;
+        border-style: solid;
+        border-color: #6c6c6c;
+        border-width: 2px;
+        border-radius: 6px;
+        padding: 10px;
+  
+        .basketicon {
+          font-size: 20px;
+          color: darkmagenta;
+        }
+        span {
+          margin-left: 5px;
+        }
+      }
+
+      .logout {
+        
+
+        &__button {
+          border-radius: 6px;
+          border: none;
+          cursor: pointer;
+          font-size: 12px;
+        }
+      }
+    
+    }
+
 
 @media screen and (max-width: 500px) {
   .navigation {

@@ -26,16 +26,23 @@ const Navigation = () => {
         <NavLink to="/products">Ürünler</NavLink>
         {!isAuth && <NavLink to="/login">Giriş yap</NavLink>}
         {isAuth && <NavLink to="/profile">Profil</NavLink>}
-        <div className="nav__basket">
-          <NavLink to="/basket">
-            <FontAwesomeIcon icon={faBasketShopping} className="nav__basket-icon"></FontAwesomeIcon>
-          </NavLink>
-         <span>{cartQuantity}</span>
-        </div>
-       {isAuth && <button className="nav-button" onClick={logoutHandler}>
-          Çıkış yap
-        </button> }
       </nav>
+      <div className="nav__basket">
+        <NavLink to="/basket">
+          <FontAwesomeIcon
+            icon={faBasketShopping}
+            className="basketicon"
+          ></FontAwesomeIcon>
+        </NavLink>
+        <span>{cartQuantity}</span>
+      </div>
+      <div className="logout">
+        {isAuth && (
+          <button className="logout__button" onClick={logoutHandler}>
+            Çıkış yap
+          </button>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,11 +1,12 @@
 import { useSelector } from "react-redux";
-import BasketItem from "./BasketItem";
-import "./ShoppingBasket.scss";
+import BasketCardItem from "./BasketCardItem";
+
 const ShoppingBasket = () => {
   const basketItems = useSelector((state) => state.cart.items);
+  const cartQuantity = useSelector((state) => state.cart.totalQuantity);
 
- const basketProductList = basketItems.map((item) => (
-    <BasketItem
+  const basketProductList = basketItems.map((item) => (
+    <BasketCardItem
       key={item.id}
       item={{
         id: item.id,
@@ -16,8 +17,17 @@ const ShoppingBasket = () => {
       }}
     />
   ));
-   
-  return <div className="basketlist">{basketProductList}</div>;
+
+  const checkItem = cartQuantity === 0 && (
+    <h2>Sepetiniz boş ürün ekleyebilmek için giriş yapınız!</h2>
+  );
+
+  return (
+    <div className="basketlist">
+      {checkItem}
+      {basketProductList}
+    </div>
+  );
 };
 
 export default ShoppingBasket;
