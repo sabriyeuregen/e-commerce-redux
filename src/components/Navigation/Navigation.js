@@ -35,15 +35,17 @@ const Navigation = () => {
           ></FontAwesomeIcon>
         </NavLink>
         <span>{cartQuantity}</span>
+        
       </div>
-      <div className="logout">
-        {isAuth && (
-          <button className="logout__button" onClick={logoutHandler}>
+      <div className="logout-button">
+      {isAuth && (
+          <button className="button" onClick={logoutHandler}>
             Çıkış yap
           </button>
         )}
       </div>
-    </div>
+      </div>
+  
   );
 };
 

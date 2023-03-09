@@ -16,7 +16,6 @@
       font-size: 1.5rem;
       text-align: center;
       color: darkmagenta;
-
     }
     h2 {
       font-size: 1.25rem;
@@ -28,7 +27,6 @@
   .nav {
     display: flex;
     padding: 5px;
-    
 
     a {
       margin: 0 20px;
@@ -43,37 +41,36 @@
       }
     }
   }
-    .nav__basket {
-        display: block;
-        text-align: center;
-        border-style: solid;
-        border-color: #6c6c6c;
-        border-width: 2px;
-        border-radius: 6px;
-        padding: 10px;
-  
-        .basketicon {
-          font-size: 20px;
-          color: darkmagenta;
-        }
-        span {
-          margin-left: 5px;
-        }
-      }
+  .logout-button {
+    margin-right: 5px;
 
-      .logout {
-        
-
-        &__button {
-          border-radius: 6px;
-          border: none;
-          cursor: pointer;
-          font-size: 12px;
-        }
-      }
-    
+    .button {
+      cursor: pointer;
+      font: inherit;
+      color: white;
+      background-color: #9f5ccc;
+      border: 1px solid #9f5ccc;
+      border-radius: 4px;
+      padding: 5px; 
     }
+  }
+  .nav__basket {
+    text-align: center;
+    border-style: solid;
+    border-color: #6c6c6c;
+    border-width: 2px;
+    border-radius: 6px;
+    padding: 10px;
 
+    .basketicon {
+      font-size: 20px;
+      color: darkmagenta;
+    }
+    span {
+      margin-left: 5px;
+    }
+  }
+}
 
 @media screen and (max-width: 500px) {
   .navigation {
@@ -83,6 +80,11 @@
 
     .navigation__logo {
       text-align: center;
+    }
+    .logout-button {
+      position: absolute;
+      right: 0;
+      top: 20px;
     }
   }
 }

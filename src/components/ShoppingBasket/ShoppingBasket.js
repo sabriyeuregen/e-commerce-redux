@@ -19,7 +19,7 @@ const ShoppingBasket = () => {
   ));
 
   const checkItem = cartQuantity === 0 && (
-    <h2>Sepetiniz boş ürün ekleyebilmek için giriş yapınız!</h2>
+    <h2>Sepetiniz boş!</h2>
   );
 
   return (
