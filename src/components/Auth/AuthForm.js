@@ -67,7 +67,7 @@ const AuthForm = () => {
   return (
     <section className="auth">
       <h1>{isLogin ? "Giriş yap" : "Kayıt ol"}</h1>
-      <form onSubmit={submitHandler} className="auth__form"> 
+      <form onSubmit={submitHandler} className="auth__form">
         <div className="auth__form-email">
           <label htmlFor="email">Email</label>
           <input type="email" id="email" required ref={emailInputRef} />
@@ -83,7 +83,9 @@ const AuthForm = () => {
         </div>
         <div className="auth__form-buttons">
           {!isLoading && (
-            <button className="auth__form-buttons1">{isLogin ? "Giriş yap" : "Hesap oluştur"}</button>
+            <button className="auth__form-buttons1">
+              {isLogin ? "Giriş yap" : "Hesap oluştur"}
+            </button>
           )}
           {isLoading && <p>Sending request...</p>}
           <button
